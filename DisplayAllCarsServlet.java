@@ -33,7 +33,7 @@ public class DisplayAllCarsServlet extends HttpServlet{
 			RequestDispatcher rd = req.getRequestDispatcher("DisplayAllCars.jsp");
 			rd.forward(req, resp);
 			
-			
+			System.out.println("hii");
 		} catch (ClassNotFoundException | SQLException e) {
 			
 			e.printStackTrace();

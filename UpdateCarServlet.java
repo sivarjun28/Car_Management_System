@@ -1,4 +1,4 @@
-package com.jsp.carmanagementsystem;
+ package com.jsp.carmanagementsystem;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -32,12 +32,15 @@ public class UpdateCarServlet extends HttpServlet{
 			req.setAttribute("car", rs);
 			RequestDispatcher rd = req.getRequestDispatcher("updateCar.jsp");
 			rd.forward(req, resp);
+			
+			//when we use include it will go to jsp and it will come back to the the same file
 
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
 		finally {
 			if(conn!=null) {
+				
 				try {
 					conn.close();
 				} catch (SQLException e) {

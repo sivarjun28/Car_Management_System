@@ -87,13 +87,13 @@
             <td><%= rs.getInt(1)%></td>
             <td><%= rs.getString(2) %></td>
             <td><%= rs.getString(3) %></td>
-            <td>&#8377; <%= rs.getString(4) %></td>
+            <td> <%= rs.getString(4) %></td>
             <td><a href="UpdateCar?carId=<%=rs.getInt(1)%>" class="button">UPDATE</a></td>
             <td><a href="DeleteCar?carId=<%=rs.getInt(1)%>" class="button">DELETE</a></td>
         </tr>
         <% } %>
     </table>
     
-    <h2><a href="index.jsp" class="button">Go back to the Car Dashboard</a></h2>
+    <h2><a href="index.html" class="button">Go back to the Car Dashboard</a></h2>
 </body>
 </html>
